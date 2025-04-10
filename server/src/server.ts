@@ -13,14 +13,19 @@ const app = express()
 
 app.use(express.json())
 
-app.use(cors())
+app.use(cors({
+  origin: "https://code-sync-frontend-five.vercel.app",
+  credentials: true
+}));
 
 app.use(express.static(path.join(__dirname, "public"))) // Serve static files
 
 const server = http.createServer(app)
 const io = new Server(server, {
 	cors: {
-		origin: "*",
+		origin: "https://code-sync-frontend-five.vercel.app",
+    		methods: ["GET", "POST"],
+    		credentials: true,
 	},
 	maxHttpBufferSize: 1e8,
 	pingTimeout: 60000,
