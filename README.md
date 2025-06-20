@@ -22,7 +22,7 @@ A collaborative, real-time code editor where users can seamlessly code together.
 
 ## 🚀 Live Preview
 
-You can view the live preview of the project [here](https://github.com/vanshdvn2505/CodeSync).
+You can view the live preview of the project [here](https://sync-lab.vercel.app/).
 
 ## 💻 Tech Stack
 
@@ -43,7 +43,7 @@ You can view the live preview of the project [here](https://github.com/vanshdvn2
 1. **Fork this repository:** Click the Fork button located in the top-right corner of this page.
 2. **Clone the repository:**
    ```bash
-   git clone https://github.com/<your-username>/Code-Sync.git
+   git clone [https://github.com/<your-username>/SyncLab.git]
    ```
 3. **Create .env file:**
    Inside the client and server directories create `.env` and set:
